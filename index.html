@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio - Omar Atef</title>
+  </head>
+  <body class="light">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">Omar Atef</div>
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a
+          href="Resume.pdf"
+          id="resume-btn"
+          class="resume-btn"
+          download="Resume.pdf"
+          >Download Resume</a
+        >
+      </div>
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        🌙
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero reveal">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Discover my work and projects.</p>
+    </header>
+
+    <!-- Me Section -->
+    <section class="me reveal">
+      <img src="images/Me.jpg" alt="Profile photo of Omar Atef" width="300" />
+      <h2>Software Development</h2>
+      <h3>Full-Stack .NET Developer</h3>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="about-me reveal">
+      <h2>About Me</h2>
+      <p>
+        I’m a passionate Full-Stack Developer who loves building interactive
+        websites.<br />
+        Currently in my third year at the Faculty of Computer Science,
+        specializing in .NET with experience in SQL, HTML, CSS, JavaScript, and
+        C#.<br />
+        I enjoy solving problems, collaborating with others, and turning ideas
+        into user-friendly solutions.<br />
+        My goal is to grow as a professional developer and create projects that
+        make a real impact.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills reveal">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <ul>
+          <li>.NET Development</li>
+          <li>SQL</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>C#</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>OOP</li>
+          <li>Problem-Solving</li>
+          <li>Data Structures</li>
+          <li>Algorithms</li>
+        </ul>
+        <ul>
+          <li>Teamwork</li>
+          <li>Communication</li>
+          <li>Time Management</li>
+          <li>Creativity</li>
+          <li>Attention to Detail</li>
+          <li>Leadership</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="languages reveal">
+      <h2>Languages</h2>
+      <ul>
+        <li>Arabic - Native</li>
+        <li>English - Intermediate</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="education reveal">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          Bachelor's in Computer Science - Faculty of Computer Science, Misr
+          International University (2023 - 2027)
+        </li>
+        <li>GPA: 3.7</li>
+      </ul>
+    </section>
+
+    <!-- Courses -->
+    <section class="skills reveal">
+      <h2>Courses</h2>
+      <ul>
+        <li>Front-End Web Development - Elzero Academy (2024)</li>
+        <li>Back-End Web Development with Node.js (2024)</li>
+        <li>Database Management Systems - SQL, MongoDB (2024)</li>
+        <li>Data Structures and Algorithms - Udemy (2024)</li>
+        <li>Introduction to C# Programming (2025)</li>
+        <li>
+          Full-Stack Web Development with .NET - Digital Egypt Pioneers
+          Initiative (2025)
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects reveal">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <img
+          src="images/Screenshot 2025-07-29 235915.png"
+          alt="Smart Academy app screenshot"
+          width="400"
+        />
+        <h3>Smart Academy</h3>
+        <p>
+          A web application for online courses, allowing users to browse,
+          enroll, and manage their learning experience.
+        </p>
+        <a href="Courses.html" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img
+          src="images/Clothes.png"
+          alt="FashionNest website screenshot"
+          width="400"
+        />
+        <h3>FashionNest</h3>
+        <p>
+          An e-commerce website for fashion products, featuring user
+          authentication, product browsing, shopping cart, and order management
+          functionalities.
+        </p>
+        <a href="Fashion.html" target="_blank">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img
+          src="images/CrossWord.jpg"
+          alt="Crossword puzzle screenshot"
+          width="400"
+        />
+        <h3>CrossWord Puzzle</h3>
+        <p>
+          A fun and interactive crossword puzzle game built with C++ and GUI,
+          with 3 levels and static puzzle generation.
+        </p>
+        <a href="Crossword.html" target="_blank">View Project</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact reveal">
+      <h2>Contact Me</h2>
+      <p>
+        If you'd like to get in touch, feel free to reach out via email or
+        connect with me on LinkedIn.
+      </p>
+      <ul>
+        <li>
+          Email:
+          <a href="mailto:omar.atef5270@gmail.com">omar.atef5270@gmail.com</a>
+        </li>
+        <li>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/omar-atef-82a4512b0"
+            target="_blank"
+            >My LinkedIn</a
+          >
+        </li>
+        <li>
+          GitHub:
+          <a href="https://github.com/Omar22-atef" target="_blank">My GitHub</a>
+        </li>
+        <li>Phone: <a href="tel:+201067817528">+20 106 781 7528</a></li>
+      </ul>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
