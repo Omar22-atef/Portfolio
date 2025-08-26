@@ -1,0 +1,201 @@
+/* =====================
+   GLOBAL STYLES
+   ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f8f9fa;
+  color: #2c3e50;
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+ul li::before {
+  content: "✔";
+  color: #667eea;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* =====================
+   HEADER
+   ===================== */
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Dark mode toggle button */
+#darkToggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #2c3e50;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#darkToggle:hover {
+  background: #667eea;
+  color: white;
+}
+
+/* =====================
+   PROJECT IMAGES
+   ===================== */
+.project-images {
+  display: grid;
+  place-items: center;
+  padding: 40px;
+}
+
+.project-images img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+/* =====================
+   SECTIONS
+   ===================== */
+section {
+  padding: 50px 80px;
+  background: white;
+  margin: 30px auto;
+  max-width: 1200px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+section:nth-child(even) {
+  background: #fdfdfd;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+section h2:hover {
+  color: #667eea;
+}
+
+/* Why-Fashion cards */
+.why-fashion ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  padding: 0;
+}
+
+.why-fashion li {
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: 500;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.why-fashion li:hover {
+  background: #e0e7ff;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #2c3e50;
+  color: white;
+  margin-top: 50px;
+  border-radius: 20px 20px 0 0;
+}
+
+/* =====================
+   DARK MODE
+   ===================== */
+body.dark {
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+body.dark section {
+  background: #161b22;
+  color: #e6edf3;
+}
+
+body.dark header {
+  background: linear-gradient(135deg, #141e30, #243b55);
+}
+
+body.dark footer {
+  background: #0d1117;
+}
+
+body.dark ul li::before {
+  color: #58a6ff;
+}
+
+body.dark .why-fashion li {
+  background: #1f2937;
+  color: #e6edf3;
+}
+
+body.dark .why-fashion li:hover {
+  background: #2d3748;
+}
+
+body.dark #darkToggle {
+  background: #2c3e50;
+  color: white;
+}
